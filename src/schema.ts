@@ -6,9 +6,7 @@ export const resourcesTable = pgTable("resources_table", {
   // TODO: implement slug
   link: text("link").notNull(),
   createdAt: timestamp("created_at").notNull().defaultNow(),
-  updatedAt: timestamp("updated_at")
-    .notNull()
-    .$onUpdate(() => new Date()),
+  updatedAt: timestamp("updated_at").$onUpdate(() => new Date()),
 });
 
 export type InsertResource = typeof resourcesTable.$inferInsert;
