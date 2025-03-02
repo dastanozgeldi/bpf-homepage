@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.10.4",
-    "dotenv": "^16.4.7",
     "drizzle-orm": "^0.40.0",
     "next": "15.2.0",
     "react": "^19.0.0",
