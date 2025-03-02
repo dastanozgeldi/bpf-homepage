@@ -2,6 +2,7 @@ import { pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
 
 export const resourcesTable = pgTable("resources_table", {
   id: serial("id").primaryKey(),
+  title: text("title").notNull(),
   // TODO: implement slug
   link: text("link").notNull(),
   createdAt: timestamp("created_at").notNull().defaultNow(),
