@@ -3,7 +3,6 @@ import data from "./resources.json";
 // import { resourcesTable } from "@/schema";
 
 export default async function Page() {
-  console.log(data);
   // const resources = await db.select().from(resourcesTable);
 
   return (
