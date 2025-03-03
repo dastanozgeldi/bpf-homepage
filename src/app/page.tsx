@@ -21,7 +21,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 gap-8 border font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center min-h-screen p-8 gap-8 font-[family-name:var(--font-geist-sans)]">
       <Link href="/resources">go to resources</Link>
       {/* Main Content */}
       <Card className="w-full max-w-2xl">
