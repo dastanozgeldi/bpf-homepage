@@ -1,11 +1,8 @@
 import Link from "next/link";
-import data from "./resources.json";
-// import { db } from "@/db";
-// import { resourcesTable } from "@/schema";
+
+import data from "./resources.json" assert { type: "json" };
 
 export default async function Page() {
-  // const resources = await db.select().from(resourcesTable);
-
   return (
     <div>
       <div className="flex items-center justify-between">
@@ -19,6 +16,8 @@ export default async function Page() {
             key={id}
             className="p-3 border rounded-lg w-full"
             href={resource.url}
+            target={resource.external ? "_blank" : undefined}
+            rel={resource.external ? "noopener noreferrer" : undefined}
           >
             <h3>{resource.name}</h3>
           </a>

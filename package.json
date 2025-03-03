@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^0.10.4",
-    "dotenv": "^16.4.7",
-    "drizzle-orm": "^0.40.0",
+    "@next/mdx": "^15.2.0",
+    "framer-motion": "^12.4.9",
     "next": "15.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sugar-high": "^0.9.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -22,7 +22,6 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "drizzle-kit": "^0.30.5",
     "eslint": "^9",
     "eslint-config-next": "15.2.0",
     "tailwindcss": "^4",
