@@ -1,18 +1,27 @@
 [
   {
     "name": "Next js",
-    "url": "https://nextjs.org/"
+    "url": "https://nextjs.org/",
+    "external": true
   },
   {
     "name": "Роадмапы для прогеров",
-    "url": "https://roadmap.sh/"
+    "url": "https://roadmap.sh/",
+    "external": true
   },
   {
     "name": "Drizzle ORM",
-    "url": "https://orm.drizzle.team/"
+    "url": "https://orm.drizzle.team/",
+    "external": true
   },
   {
     "name": "База всех вопросов SAT",
-    "url": "https://oneprep.xyz/"
+    "url": "https://oneprep.xyz/",
+    "external": true
+  },
+  {
+    "name": "AI",
+    "url": "/n/ai",
+    "external": false
   }
 ]
