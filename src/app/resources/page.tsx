@@ -16,6 +16,8 @@ export default async function Page() {
             key={id}
             className="p-3 border rounded-lg w-full"
             href={resource.url}
+            target={resource.external ? "_blank" : undefined}
+            rel={resource.external ? "noopener noreferrer" : undefined}
           >
             <h3>{resource.name}</h3>
           </a>
