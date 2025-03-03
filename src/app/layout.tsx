@@ -25,10 +25,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
       >
         <main className="mx-auto flex min-h-screen max-w-xl flex-col p-6 space-y-6">
           {children}
+          <footer className="text-sm text-gray-500 flex items-center justify-center gap-2">
+            <p>© {new Date().getFullYear()} BPF Club</p>
+            <span>•</span>
+            <p>Performance is our religion</p>
+          </footer>
         </main>
       </body>
     </html>
