@@ -20,8 +20,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center gap-8 font-[family-name:var(--font-geist-sans)]">
-      {/* Main Content */}
+    <>
       <Card className="w-full max-w-2xl">
         <CardHeader className="pb-2">
           <div className="flex justify-between items-center">
@@ -92,6 +91,6 @@ export default function Home() {
           </div>
         </CardFooter>
       </Card>
-    </div>
+    </>
   );
 }
