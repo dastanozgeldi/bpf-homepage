@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
       >
         <main className="mx-auto flex min-h-screen max-w-xl flex-col p-6 space-y-6">
+          <nav className="flex items-center justify-between border-b pb-2">
+            <Link href="/" className="text-xl font-bold">
+              BPF
+            </Link>
+
+            <Link href="/resources">/resources</Link>
+          </nav>
           {children}
           <footer className="text-sm text-gray-500 flex items-center justify-center gap-2">
             <p>© {new Date().getFullYear()} BPF Club</p>
