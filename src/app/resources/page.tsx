@@ -1,8 +1,12 @@
 import Link from "next/link";
 
 import data from "./resources.json" assert { type: "json" };
+import { db } from "@/db";
+import { resourcesTable } from "@/schema";
 
 export default async function Page() {
+  const resources = await db.select().from(resourcesTable);
+  console.log(resources)
   return (
     <div>
       <div className="flex items-center justify-between">
